@@ -37,6 +37,12 @@ class TestUser(unittest.TestCase):
 
         self.assertTrue(user_exist)
 
+    def test_save_data(self):
+            '''Tests if data is being saved'''
+
+        self.assertEqual(len(Credentials.generated), 2)
+
+
 
 
 
