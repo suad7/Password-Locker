@@ -1,6 +1,19 @@
+from credentials import Credentials
+from user import User
+import random
 
+def create_user (username, password):
+    '''function to create a new user '''
 
-    # def save_acc(self):
-            # '''Method to push new created account and password to storage'''
+    new_acc = User (username, password)
 
-        # User.account_list.append(self)
+    return new_acc
+
+def users_data(app_title, acc_name, acc_password):
+    '''Function to create a new data entry'''
+
+    new_data = Credentials (app_title, acc_name, acc_password)
+
+    return new_data
+
+   
