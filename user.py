@@ -16,4 +16,11 @@ class User:
 
         User.account_list.append(self)
 
-   
+    @classmethod
+    def user_auth(cls,username, password):
+        '''method that checksif user exist by name'''
+
+        for acc in cls.account_list:
+            if acc.username == username and acc.password == password:
+                return True
+        return False
