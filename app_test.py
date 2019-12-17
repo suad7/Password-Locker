@@ -11,6 +11,7 @@ class TestUser(unittest.TestCase):
         self.new_user = User("Suad" , "samar99")
         self.generate = Credentials ("twitter", "lordSpiral", "sitUp!")
 
+
     def test_init(self):
             '''Testing to see if the object is properly initialized'''
 
@@ -41,6 +42,8 @@ class TestUser(unittest.TestCase):
             '''Tests if data is being saved'''
 
         self.assertEqual(len(Credentials.generated), 2)
+
+
 
 
 
