@@ -41,5 +41,15 @@ def delete_data(x):
 
     Credentials.delete_data(x)
 
+# def find_account(app_title):
+        '''Function to locate and display account details'''
+
+    return Credentials.locate_account(app_title)
+
+# def pass_generate(length):
+    '''Function to create a random password'''
+
+    return Credentials.random_password(length)
+
 
    
