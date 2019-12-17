@@ -1,12 +1,6 @@
-class User:
-    ''' class that generates a new instance of users '''
-
-    account_list = []
 
 
-    def __init__(self, username, password):
+    # def save_acc(self):
+            # '''Method to push new created account and password to storage'''
 
-        '''define object properties '''
-
-        self.username = username
-        self.password = password
+        # User.account_list.append(self)
