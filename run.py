@@ -2,29 +2,32 @@ from credentials import Credentials
 from user import User
 import random
 
-def create_user (username, password):
+
+def create_user(username, password):
     '''function to create a new user '''
 
-    new_acc = User (username, password)
+    new_acc = User(username, password)
 
     return new_acc
+
 
 def users_data(app_title, acc_name, acc_password):
     '''Function to create a new data entry'''
 
-    new_data = Credentials (app_title, acc_name, acc_password)
+    new_data = Credentials(app_title, acc_name, acc_password)
 
     return new_data
+
 
 def authenticate_user(username, password):
         '''Function to authenticate user'''
 
-    return User.user_auth(username, password)
+    return User.user_auth(username,password)
 
 def save_created_user(user):
-        '''Function to store user information'''
+        '''Function to store user information'''        
 
-    user.save_acc()
+             user.save_acc()
 
 def save_user_data(credentials):
     '''Function to store user data'''
@@ -125,7 +128,7 @@ def main():
             print('\n')
 
                 
-     elif short_code == "vd":
+      elif short_code == "vd":
                         
         if display_data():
             print("Here is a list of all your stored account data")
@@ -137,7 +140,7 @@ def main():
             print (f"Application Password >>> {data.acc_password}")
             print('\n')
 
-        else:
+      else:
             print("You don't seem to have any stored account data")
             print('\n')
 
@@ -146,19 +149,42 @@ def main():
               delete_answer = input(">>>")
               foun d_acc = find_account(delete_answer)
         if (found_acc):
-             print (f"{delete_answer} you are here ")
+            print (f"{delete_answer} you are here ")
                  delete_data(found_acc)
-             print(f"Your {delete_answer}'s data has been successfully deleted")
+            print(f"Your {delete_answer}'s data has been successfully deleted")
 
       elif short_code == "ex":
-             print("Exiting the application...Goodbye!")
+            print("Exiting the application...Goodbye!")
                     exit()
 
-        else:
-             print("Invalid code, try again")
+      else:
+            print("Invalid code, try again")
 
-        else:
-             print("Wrong username and/or password. Try again")
+      else:
+            print("Wrong username and/or password. Try again")
+        
+      elif answer == "su":
+            print("Create a new account to store your data...")
+
+            print("Enter a Username:")
+            username = input(">>>")
+
+            print("Enter a password:")
+            password = input(">>>")
+
+            save_created_user(create_user(username, password))
+            print(f"Welcome {username}, your account has been successfully set up")
+            print('\n')
+            print("Now to login, use li")
+
+      elif answer == "xx":
+            print ("Goodbye!")
+            exit()
+     else:
+            print("Invalid code, try again")
+
+ if __name__ == '__main__':
+    main()     
 
 
 

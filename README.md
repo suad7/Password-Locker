@@ -2,6 +2,7 @@
 Password-Locker
 ### PROJECT AUTHOR
 Suad mohamed
+https://github.com/suad7
 ### DESCRIPTION
 Password Locker is python application
 that,allwo the user to generate passwords for new accounts.
