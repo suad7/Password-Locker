@@ -5,7 +5,8 @@ Password-Locker
 ### PROJECT AUTHOR
 
 Suad mohamed
-https://github.com/suad7
+
+`https://github.com/suad7`
 
 ### DESCRIPTION
 
