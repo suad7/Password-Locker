@@ -7,10 +7,16 @@ class TestUser(unittest.TestCase):
 
     def setUp(self):
         '''set up a method to run before each case '''
-        self.new_user = User("Suad7")
+        self.new_user = User("Suad" , "deepinthot")
         self.generate = Credentials ("twitter", "lordSpiral", "sitUp!")
-        def test_init(self):
+    def test_init(self):
             '''Testing to see if the object is properly initialized'''
+        self.assertEqual(self.new_user.username, "Suad")
+        self.assertEqual(self.new_user.password, "deepinthot")
+
+        self.assertEqual(self.generate.app_title, "twitter")
+        self.assertEqual(self.generate.acc_name, "lordSpiral")
+        self.assertEqual(self.generate.acc_password, "sitUp!")
 
 
 
