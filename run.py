@@ -16,4 +16,10 @@ def users_data(app_title, acc_name, acc_password):
 
     return new_data
 
+def authenticate_user(username, password):
+        '''Function to authenticate user'''
+
+    return User.user_auth(username, password)
+
+
    
