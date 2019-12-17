@@ -137,6 +137,29 @@ def main():
             print (f"Application Password >>> {data.acc_password}")
             print('\n')
 
+        else:
+            print("You don't seem to have any stored account data")
+            print('\n')
+
+      elif short_code == "dd":
+            print ("Enter the account name of the data you'd like to delete...")
+              delete_answer = input(">>>")
+              foun d_acc = find_account(delete_answer)
+        if (found_acc):
+             print (f"{delete_answer} you are here ")
+                 delete_data(found_acc)
+             print(f"Your {delete_answer}'s data has been successfully deleted")
+
+      elif short_code == "ex":
+             print("Exiting the application...Goodbye!")
+                    exit()
+
+        else:
+             print("Invalid code, try again")
+
+        else:
+             print("Wrong username and/or password. Try again")
+
 
 
 
