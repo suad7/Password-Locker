@@ -73,7 +73,6 @@ def main():
             print("Login successful!")
             print('\n')
 
-            
             while log_in:
                 print('\n')
                 print("Use the following short codes to navigate \n ad - to save an existing account data \n cd - to create new account data \n vd - to view list of inputed data \n dd - to delete account data from list \n ex - to exit application")
