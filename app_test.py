@@ -13,13 +13,18 @@ class TestUser(unittest.TestCase):
 
     def test_init(self):
             '''Testing to see if the object is properly initialized'''
-            
+
         self.assertEqual(self.new_user.username, "Suad")
         self.assertEqual(self.new_user.password, "deepinthot")
 
         self.assertEqual(self.generate.app_title, "twitter")
         self.assertEqual(self.generate.acc_name, "lordSpiral")
         self.assertEqual(self.generate.acc_password, "sitUp!")
+
+        def test_saved_acc(self):
+            '''Test case saving username and passwords'''
+
+        self.assertEqual(len(User.account_list), 0)
 
 
 
