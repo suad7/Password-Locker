@@ -31,5 +31,15 @@ def save_user_data(credentials):
 
     credentials.save_data()
 
+def display_data():
+        '''Function to display saved data'''
+
+    return Credentials.display_account()
+
+def delete_data(x):
+    '''Function to remove stored data'''
+
+    Credentials.delete_data(x)
+
 
    
