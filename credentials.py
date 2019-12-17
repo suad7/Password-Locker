@@ -39,7 +39,7 @@ class Credentials:
 
         return cls.generated
 
-    @classmethod
+        @classmethod
     def locate_account(cls, app_title):
         '''Method to search and display the account data'''
 
