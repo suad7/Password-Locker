@@ -22,7 +22,14 @@ that,allwo the user to generate passwords for new accounts.
 - python 3.6 and it's libraries
 
 ### BEHAVIOR DRIVEN DEVELOPMENT (SPECIFICATIONS)
+This is a way of constructing a program based off what the expected outcome is. Expected outcome is broken to what is required and a code built around this requirements.
 
+Features As a User, there is:
+
+1. A sign up and login protection.
+2. Navigation guides.
+3. Adding already existing account details as well as new ones   with auto generated suggested passwords.
+4. Viewing already stored account details.
 ### CONTACT
 
 sm.ha21@hotmail.com
