@@ -21,5 +21,15 @@ def authenticate_user(username, password):
 
     return User.user_auth(username, password)
 
+def save_created_user(user):
+        '''Function to store user information'''
+
+    user.save_acc()
+
+def save_user_data(credentials):
+    '''Function to store user data'''
+
+    credentials.save_data()
+
 
    
