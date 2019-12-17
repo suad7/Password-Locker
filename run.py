@@ -73,3 +73,26 @@ def main():
             print("Login successful!")
             print('\n')
 
+            
+            while log_in:
+                print('\n')
+                print("Use the following short codes to navigate \n ad - to save an existing account data \n cd - to create new account data \n vd - to view list of inputed data \n dd - to delete account data from list \n ex - to exit application")
+                short_code = input(">>>")
+
+                if short_code == "ad":
+                    print ("Enter existing account data...")
+
+                    print ("Enter the name of the account")
+                    app_title = input(">>>")
+
+                    print ("Enter the username to the account")
+                    acc_name = input (">>>")
+
+                    print ("Enter the account's password")
+                    acc_password = input (">>>")
+
+                    save_user_data(users_data(app_title, acc_name, acc_password))
+
+                    print (f"Data for {app_title} has been saved.")
+
+
