@@ -25,11 +25,25 @@ class Credentials:
 
         Credentials.generated.remove(self)
 
-   def random_password(self):
+    def random_password(self):
             '''method to generate a random password'''
 
         characters = string.ascii_lowercase + string.digits
         gen_password = ''.join(random.choice(characters) for i in range (0,12))
 
         return gen_password
+
+        @classmethod
+    def display_account(cls):
+        '''Method to display stored account data'''
+
+        return cls.generated
+
+    @classmethod
+    def locate_account(cls, app_title):
+        '''Method to search and display the account data'''
+
+        for acc in cls.generated:
+            if acc.app_title == app_title:
+                return acc
 
