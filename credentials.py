@@ -25,7 +25,7 @@ class Credentials:
 
         Credentials.generated.remove(self)
 
-         def random_password(self):
+   def random_password(self):
             '''method to generate a random password'''
 
         characters = string.ascii_lowercase + string.digits
