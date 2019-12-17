@@ -6,8 +6,9 @@ Suad mohamed
 Password Locker is python programme that,allwo the user to generate passwords for new accounts.
 
 ### PROJECT SETUP INSTRUCTION
-- git clone to local `https://suad7.github.io/Password-Locker/.` machine
-- 
+- install pyperclip.
+- clone repository `https://suad7.github.io/Password-Locker/.`
+
 ### TECHNOLOGIES USED
 - python 3.6 and it's libraries
 
