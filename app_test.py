@@ -35,6 +35,8 @@ class TestUser(unittest.TestCase):
 
         user_exist = User.user_auth("suad", "samar99")
 
+        self.assertTrue(user_exist)
+
 
 
 
