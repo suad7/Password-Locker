@@ -33,13 +33,13 @@ class Credentials:
 
         return gen_password
 
-        @classmethod
+    @classmethod
     def display_account(cls):
         '''Method to display stored account data'''
 
         return cls.generated
 
-        @classmethod
+    @classmethod
     def locate_account(cls, app_title):
         '''Method to search and display the account data'''
 
