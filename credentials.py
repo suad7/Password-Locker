@@ -25,3 +25,11 @@ class Credentials:
 
         Credentials.generated.remove(self)
 
+         def random_password(self):
+            '''method to generate a random password'''
+
+        characters = string.ascii_lowercase + string.digits
+        gen_password = ''.join(random.choice(characters) for i in range (0,12))
+
+        return gen_password
+
