@@ -52,4 +52,24 @@ def pass_generate(length):
     return Credentials.random_password(length)
 
 
-   
+def main():
+    
+    print("This is password locker!")
+    print("To sign up, key 'su', to log in, key 'li' and 'xx' to exit ...")
+    log_in = False
+
+    while True:
+        answer = input ('>>> ')
+
+        if answer == "li":
+
+            print("Enter your Username: ")
+            username = input('>>> ')
+
+            print("Enter your password: ")
+            password = input ('>>> ')
+
+            log_in = authenticate_user(username, password) if answer == 'li' else False
+            print("Login successful!")
+            print('\n')
+

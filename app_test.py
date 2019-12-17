@@ -61,10 +61,16 @@ class TestUser(unittest.TestCase):
         test_data.save_data()
 
         self.assertEqual(len(test_data.acc_password), 12)
+    def test_display_account(self):
+            '''Test for data display'''
+
+        self.assertEqual(Credentials.display_account(self), Credentials.generated)
+
 
 
         
-
+if __name__ == '__main__':
+    unittest.main()
 
 
 
