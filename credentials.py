@@ -15,9 +15,9 @@ class Credentials:
         self.acc_password = acc_password
 
     def save_data(self):
-            '''Method that saves our accounts'''
+        '''Method that saves our accounts'''
 
-            Credentials.generated.append(self)
+        Credentials.generated.append(self)
 
     def delete_data(self):
             '''Method to delete an account of our list'''
